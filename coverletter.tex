@@ -1,0 +1,158 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+%Available options: 
+%circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{profile}
+\name{Lingxuan}{Kong}
+\position{Software Developer}
+%\address{550 Lygon Street, Carlton, VIC 3053}
+
+\mobile{(+61) 433929102}
+\email{lingxuank@student.unimelb.edu.au}
+\homepage{kongpeter.github.io}
+\github{kongpeter}
+%\linkedin{Lingxuan Kong}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world. Now!"}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Seek}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Graduate Program}
+% How the letter is opened
+\letteropening{Dear Sir/Madam,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Academic Transcript}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+ {}
+  {Lingxuan Kong~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am currently study in Master of Information Technology, The University of Melbourne. I have a variety of different skills in software programming. I have completed two academic group projects, which mainly focused on Arduino programming and web development. I worked as a research follower in Chinese key laboratory for algorithm design. 
+
+
+% Must change here
+\lettersection{Why Seek?}
+\begin{itemize}
+    \item \textbf{Career Development Opportunities. }Seek could provide me with unique career development opportunities, which can make me as an awesome software developer.
+    
+    % \item \textbf{Data Science. }The future belongs data, and the team members of Symbolix, they are the expert on data. I would like to learn with them. Symbolix will become bigger and bigger with their big version. 
+    
+    \item \textbf{I love Programming! }Seek could give me a chance to achieve my goal: Programming can make everyone happy!
+\end{itemize}
+
+
+
+
+
+\lettersection{Why Me?}
+\begin{itemize}
+    \item[(1)]\textbf{Team oriented.} I have completed many team projects in the university. Furthermore, I have obtained experience about agile project management. Therefore, based on my experience of team working style, I can bring sufficient innovation and imagination to the team. 
+    
+    % \item[(2)]\textbf{Hardware and Software technology.} I learned electrical engineering before, I have a good command on both hardware and software, like Arduino and data science. Thus, I am very confident to program C firmware, building and testing hardware. 
+    
+    \item[(2)]\textbf{Ambitious, young, self-motivated.} I know that the team in Seek with most people having a variety of different skills in different areas, especial in data science, that is what I most interested in, because I enjoy learning different skills from different people, and I could share my skills with them. 
+\end{itemize}
+
+%\lettersection
+I am keen to develop my professional skills and look forward to discussing my application with you at an interview. I have enclosed a copy of my resume for your consideration. I can be contacted at all times on the details provided above.
+
+
+\end{cvletter}
+
+
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
