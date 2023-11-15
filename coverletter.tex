@@ -18,8 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
-
+\documentclass[12pt, a4paper]{./awesome-cv/awesome-cv}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -35,13 +34,24 @@
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{333333}
+\definecolor{graytext}{HTML}{5D5D5D}
+\definecolor{lighttext}{HTML}{999999}
+
+\hypersetup
+{
+colorlinks,%
+citecolor=black,% cite color
+filecolor=black,% file color
+linkcolor=black,% link color
+urlcolor=awesome-skyblue % url color
+}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
+
+
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -54,15 +64,15 @@
 %Available options: 
 %circle|rectangle,edge/noedge,left/right
 %\photo[circle,noedge,left]{profile}
-\name{Lingxuan}{Kong}
-\position{Software Developer}
-%\address{550 Lygon Street, Carlton, VIC 3053}
+\name{Peter}{Kong}
+\position{Web Engineer}
+\address{25 Carlingford Rd, Epping, NSW, 2121}
 
-\mobile{(+61) 433929102}
-\email{lingxuank@student.unimelb.edu.au}
-\homepage{kongpeter.github.io}
-\github{kongpeter}
-%\linkedin{Lingxuan Kong}
+\mobile{0433929102}
+\email{xjtlu2014@outlook.com}
+%\homepage{kongpeter.github.io}
+%\github{kongpeter}
+\linkedin{lingxuan-peter-kong}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -79,18 +89,18 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Company Recruitment Team}
-  {Seek}
+  {}
+  {}
 % The date on the letter, default is the date of compilation
-\letterdate{\today}
+% \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Graduate Program}
+\lettertitle{Job Application for Web Engineer}
 % How the letter is opened
-\letteropening{Dear Sir/Madam,}
+\letteropening{Dear Hiring team,}
 % How the letter is closed
-\letterclosing{Sincerely,}
+\letterclosing{\textbf{Sincerely,}}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Academic Transcript}
+%\letterenclosure[Attached]{Academic Transcript}
 
 
 %-------------------------------------------------------------------------------
@@ -104,46 +114,37 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
  {}
-  {Lingxuan Kong~~~·~~~Cover Letter}
+  {}
   {}
 
 % Print the title with above letter information
 \makelettertitle
-
 %-------------------------------------------------------------------------------
 %	LETTER CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\lettersection{About Me}
-I am currently study in Master of Information Technology, The University of Melbourne. I have a variety of different skills in software programming. I have completed two academic group projects, which mainly focused on Arduino programming and web development. I worked as a research follower in Chinese key laboratory for algorithm design. 
+% I am writing in application for the front-end developer position at \textbf{company name} as advertised in \textbf{where I found the job posting}. My training and experience in the field of computer programming and web design, along with my ability to \textbf{mention at least two skills that are listed in the job requirements}, make me the perfect candidate for the job. I know that I would be a valuable addition to the team at \textbf{company name}.
 
+% I have a master degree from the University of Melbourne and have more than 2 years of experience as a front-end developer. I have advanced knowledge of React, TypeScript, performance optimization for website and outstanding \textbf{add key soft skills that align with the job requirements}.
 
-% Must change here
-\lettersection{Why Seek?}
-\begin{itemize}
-    \item \textbf{Career Development Opportunities. }Seek could provide me with unique career development opportunities, which can make me as an awesome software developer.
-    
-    % \item \textbf{Data Science. }The future belongs data, and the team members of Symbolix, they are the expert on data. I would like to learn with them. Symbolix will become bigger and bigger with their big version. 
-    
-    \item \textbf{I love Programming! }Seek could give me a chance to achieve my goal: Programming can make everyone happy!
-\end{itemize}
+% In my most recent role at Bytedance(Tiktok), I architected and built an extensive component library with over 30 reusable UI components using React and TypeScript, resulting in a 30\% reduction in development time. This project led to notable business benefits, including enhanced performance and improved development efficiency. In addition, I am highly skilled in performance optimization in React, including React.lazy, suspense, Skeleton and webpack tree-shaking.
 
+% I am excited to be applying to \textbf{company} and for the opportunity to \textbf{describe how your skills and expertise would benefit the company}. I truly admire \textbf{mention notable milestones or characteristics you appreciate about the company} and would feel privileged to be a member of the team at \textbf{company name}.
 
+I am thrilled to express my interest in the Web Engineer position at Dovetail, as outlined in your compelling job posting. The dynamic and innovative environment at Dovetail, coupled with your team's dedication to excellence, aligns perfectly with my career aspirations and values.
 
+Throughout my 4 years of experience in web development, I have consistently sought opportunities to create high-quality, user-centric web experiences. I bring proficiency in Gatsby, TypeScript, React, and a solid foundation in front-end technologies such as HTML, CSS, and JavaScript. My experience extends to optimizing websites for search engines and implementing accessibility standards (WCAG) to ensure inclusivity.
 
+Your emphasis on staying updated on industry trends, maintaining high code quality, and fostering a culture of excellence resonates with my commitment to continuous learning and improvement. I am excited about the prospect of working in a metrics-focused and data-driven organization like Dovetail, where I can contribute to the mission of enabling teams to build better products.
 
-\lettersection{Why Me?}
-\begin{itemize}
-    \item[(1)]\textbf{Team oriented.} I have completed many team projects in the university. Furthermore, I have obtained experience about agile project management. Therefore, based on my experience of team working style, I can bring sufficient innovation and imagination to the team. 
-    
-    % \item[(2)]\textbf{Hardware and Software technology.} I learned electrical engineering before, I have a good command on both hardware and software, like Arduino and data science. Thus, I am very confident to program C firmware, building and testing hardware. 
-    
-    \item[(2)]\textbf{Ambitious, young, self-motivated.} I know that the team in Seek with most people having a variety of different skills in different areas, especial in data science, that is what I most interested in, because I enjoy learning different skills from different people, and I could share my skills with them. 
-\end{itemize}
+What excites me most about this role is the opportunity to work collaboratively with cross-functional teams, manage project timelines, and deliver high-quality code. I am passionate about ensuring a smooth user experience across different devices and browsers and am committed to implementing SEO best practices to enhance web visibility.
 
-%\lettersection
-I am keen to develop my professional skills and look forward to discussing my application with you at an interview. I have enclosed a copy of my resume for your consideration. I can be contacted at all times on the details provided above.
+I bring to the table a pragmatic and flexible approach, allowing me to adapt to shifting deadlines and project goals. My ability to communicate effectively, articulate effort vs. impact trade-offs, and work cohesively with teams aligns with your expectations for excellent, concise communication.
+
+I am enthusiastic about the prospect of joining Dovetail's web team and contributing to the ongoing success of your platform. Your commitment to diversity and inclusivity resonates with my values, and I am excited to be part of an organization that celebrates individualism and supports every team member.
+
+Thank you for considering my application. I look forward to the possibility of discussing how my contributions can help Dovetail achieve its mission of improving the quality of every thing. Please find my attached resume for your reference.
 
 
 \end{cvletter}
